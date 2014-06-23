@@ -10,11 +10,12 @@ widgets     : []            # {mathjax, quiz, bootstrap}
 mode        : selfcontained # {standalone, draft}
 ---
 
-## Read-And-Delete
+## Ideal Weight
 
-1. Edit YAML front matter
-2. Write using R Markdown
-3. Use an empty line followed by three dashes to separate slides!
+1. Stay healthy
+2. Stay in shape
+3. Thanks Prof. Caffo
+
 
 --- .class #id 
 
@@ -24,14 +25,22 @@ mode        : selfcontained # {standalone, draft}
 plot(1 : 10, 1 : 10)
 ```
 
+
+---
+
 ## Slide 3
 
 Stay healthy!
+
+
+---
 
 ## Slide 4
 
 Stay in shape! 
 
+
+---
 ## Slide 5
 
 Thanks Prof. Caffo
