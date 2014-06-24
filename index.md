@@ -12,14 +12,14 @@ mode        : selfcontained # {standalone, draft}
 
 ## Ideal Weight
 
-1. Stay healthy
-2. Stay in shape
+1. Calc ideal weight
+2. Stay healthy and in shape
 3. Thanks Prof. Caffo
 
 
 --- .class #id 
 
-## Slide 2 - Calc ideal weight
+## Slide 3 - Calc ideal weight
 
 
 ```r
@@ -51,19 +51,14 @@ mode        : selfcontained # {standalone, draft}
 
 ---
 
-## Slide 3
+## Slide 4
 
 Stay healthy!!
 
+Stay in shape!!
 
 ---
 
-## Slide 4
-
-Stay in shape! 
-
-
----
 ## Slide 5
 
 Thanks Prof. Caffo
