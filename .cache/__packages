@@ -1,12 +1,6 @@
 base
 BiocInstaller
-datasets
 devtools
-graphics
-grDevices
-methods
 shiny
 shinyapps
 slidify
-stats
-utils

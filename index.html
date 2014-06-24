@@ -61,29 +61,21 @@
     <h2>Slide 3 - Calc ideal weight</h2>
   </hgroup>
   <article data-timings="">
-    <pre><code class="r">  idealWeight &lt;- 1;
-  gender &lt;- &quot;woman&quot; # or &quot;man&quot;
-  height &lt;- 193;
+    <p>Example for a woman of 193 cm</p>
 
-  toInch = height / 2.54;  # height is in cm
-  feet5 &lt;- 12 * 5;
-
-  if( toInch &gt; feet5 ){
+<pre><code class="r">height &lt;- 193; # height is in cm
+toInch = height / 2.54;  
+feet5 &lt;- 12 * 5;
+if( toInch &gt; feet5 ){
       toInch &lt;- toInch - feet5;
-  } else {
+} else {
       toInch &lt;- 0;
-  }
-
-  if( gender == &quot;man&quot; ){
-    idealWeight &lt;- 52 + 1.9 * toInch;
-  } else { # gender = &quot;woman&quot;
-    idealWeight &lt;- 49 + 1.7 * toInch;
-  }
-  idealWeight # in Kg
+}
+idealWeight &lt;- 49 + 1.7 * toInch
+idealWeight
 </code></pre>
 
-<pre><code>## [1] 76.17
-</code></pre>
+<p>[1] 76.17</p>
 
   </article>
   <!-- Presenter Notes -->

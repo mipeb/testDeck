@@ -20,33 +20,22 @@ mode        : selfcontained # {standalone, draft}
 --- .class #id 
 
 ## Slide 3 - Calc ideal weight
-
+Example for a woman of 193 cm
 
 ```r
-  idealWeight <- 1;
-  gender <- "woman" # or "man"
-  height <- 193;
-
-  toInch = height / 2.54;  # height is in cm
-  feet5 <- 12 * 5;
-
-  if( toInch > feet5 ){
+height <- 193; # height is in cm
+toInch = height / 2.54;  
+feet5 <- 12 * 5;
+if( toInch > feet5 ){
       toInch <- toInch - feet5;
-  } else {
+} else {
       toInch <- 0;
-  }
-  
-  if( gender == "man" ){
-    idealWeight <- 52 + 1.9 * toInch;
-  } else { # gender = "woman"
-    idealWeight <- 49 + 1.7 * toInch;
-  }
-  idealWeight # in Kg
+}
+idealWeight <- 49 + 1.7 * toInch
+idealWeight
 ```
 
-```
-## [1] 76.17
-```
+[1] 76.17
 
 
 ---
