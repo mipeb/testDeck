@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Test deck</title>
+  <title>Ideal Weight Calculator</title>
   <meta charset="utf-8">
-  <meta name="description" content="Test deck">
+  <meta name="description" content="Ideal Weight Calculator">
   <meta name="author" content="">
   <meta name="generator" content="slidify" />
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -32,7 +32,7 @@
     <!-- LOGO SLIDE -->
         <slide class="title-slide segue nobackground">
   <hgroup class="auto-fadein">
-    <h1>Test deck</h1>
+    <h1>Ideal Weight Calculator</h1>
     <h2></h2>
     <p><br/></p>
   </hgroup>
@@ -43,13 +43,13 @@
     <!-- SLIDES -->
     <slide class="" id="slide-1" style="background:;">
   <hgroup>
-    <h2>Read-And-Delete</h2>
+    <h2>Ideal Weight</h2>
   </hgroup>
   <article data-timings="">
     <ol>
-<li>Edit YAML front matter</li>
-<li>Write using R Markdown</li>
-<li>Use an empty line followed by three dashes to separate slides!</li>
+<li>Stay healthy</li>
+<li>Stay in shape</li>
+<li>Thanks Prof. Caffo</li>
 </ol>
 
   </article>
@@ -58,13 +58,65 @@
 
 <slide class="class" id="id" style="background:;">
   <hgroup>
-    <h2>Slide 2</h2>
+    <h2>Slide 2 - Calc ideal weight</h2>
   </hgroup>
   <article data-timings="">
-    <pre><code class="r">plot(1:10, 1:10)
+    <pre><code class="r">  idealWeight &lt;- 1;
+  gender &lt;- &quot;woman&quot; # or &quot;man&quot;
+  height &lt;- 193;
+
+  toInch = height / 2.54;  # height is in cm
+  feet5 &lt;- 12 * 5;
+
+  if( toInch &gt; feet5 ){
+      toInch &lt;- toInch - feet5;
+  } else {
+      toInch &lt;- 0;
+  }
+
+  if( gender == &quot;man&quot; ){
+    idealWeight &lt;- 52 + 1.9 * toInch;
+  } else { # gender = &quot;woman&quot;
+    idealWeight &lt;- 49 + 1.7 * toInch;
+  }
+  idealWeight # in Kg
 </code></pre>
 
-<p><img src="assets/fig/unnamed-chunk-1.png" alt="plot of chunk unnamed-chunk-1"> </p>
+<pre><code>## [1] 76.17
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-3" style="background:;">
+  <hgroup>
+    <h2>Slide 3</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Stay healthy!!</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-4" style="background:;">
+  <hgroup>
+    <h2>Slide 4</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Stay in shape! </p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-5" style="background:;">
+  <hgroup>
+    <h2>Slide 5</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Thanks Prof. Caffo</p>
 
   </article>
   <!-- Presenter Notes -->
@@ -76,14 +128,32 @@
     <ul>
       <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=1 title='Read-And-Delete'>
+        data-slide=1 title='Ideal Weight'>
          1
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=2 title='Slide 2'>
+        data-slide=2 title='Slide 2 - Calc ideal weight'>
          2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Slide 3'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Slide 4'>
+         4
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=5 title='Slide 5'>
+         5
       </a>
     </li>
   </ul>

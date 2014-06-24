@@ -21,7 +21,7 @@ mode        : selfcontained # {standalone, draft}
 
 ## Slide 2 - Calc ideal weight
 
-```{r, echo=TRUE } #fig.height=5, fig.width=5}
+```{r} 
 
   idealWeight <- 1;
   gender <- "woman" # or "man"

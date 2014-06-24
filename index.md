@@ -1,5 +1,5 @@
 ---
-title       : Test deck
+title       : Ideal Weight Calculator
 subtitle    : 
 author      : 
 job         : 
@@ -10,21 +10,60 @@ widgets     : []            # {mathjax, quiz, bootstrap}
 mode        : selfcontained # {standalone, draft}
 ---
 
-## Read-And-Delete
+## Ideal Weight
 
-1. Edit YAML front matter
-2. Write using R Markdown
-3. Use an empty line followed by three dashes to separate slides!
+1. Stay healthy
+2. Stay in shape
+3. Thanks Prof. Caffo
+
 
 --- .class #id 
 
-## Slide 2
+## Slide 2 - Calc ideal weight
 
 
 ```r
-plot(1:10, 1:10)
+  idealWeight <- 1;
+  gender <- "woman" # or "man"
+  height <- 193;
+
+  toInch = height / 2.54;  # height is in cm
+  feet5 <- 12 * 5;
+
+  if( toInch > feet5 ){
+      toInch <- toInch - feet5;
+  } else {
+      toInch <- 0;
+  }
+  
+  if( gender == "man" ){
+    idealWeight <- 52 + 1.9 * toInch;
+  } else { # gender = "woman"
+    idealWeight <- 49 + 1.7 * toInch;
+  }
+  idealWeight # in Kg
 ```
 
-![plot of chunk unnamed-chunk-1](assets/fig/unnamed-chunk-1.png) 
+```
+## [1] 76.17
+```
 
 
+---
+
+## Slide 3
+
+Stay healthy!!
+
+
+---
+
+## Slide 4
+
+Stay in shape! 
+
+
+---
+## Slide 5
+
+Thanks Prof. Caffo
